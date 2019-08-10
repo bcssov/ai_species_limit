@@ -183,7 +183,7 @@ country_event = {
 }
 
 country_event = {
-    id = asl_options.1
+    id = asl_options.2
     hide_window = yes
     is_triggered_only = yes
 
@@ -208,5 +208,7 @@ country_event = {
             which = asl_allowed_species
             value = event_target:option_target.asl_allowed_species
         }
+
+        set_country_flag = asl_option_set
     }
 }
