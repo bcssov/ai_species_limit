@@ -1,0 +1,35 @@
+asl_options = {
+    resources = {
+        category = edicts
+        cost = {
+            influence = 0
+        }
+    }
+
+    length = 0
+
+    potential = {
+        OR = {
+            count_country = {
+                count = 0
+                limit = {
+                    has_country_flag = asl_option_country
+                }
+            }
+            has_country_flag = asl_option_country
+        }
+    }
+
+    effect = {
+        custom_tooltip = asl_options_effect
+        hidden_effect = {
+            country_event = {
+                id = asl_options.1
+            }
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}

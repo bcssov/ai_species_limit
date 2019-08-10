@@ -1,0 +1,212 @@
+namespace = asl_options
+
+@asl_default_option = 4
+
+country_event = {
+    id = asl_options.1
+    title = "asl_options.1.name"
+    desc = "asl_options.1.desc"
+    picture = GFX_evt_ship_in_orbit
+    is_triggered_only = yes
+
+    trigger = {
+        is_ai = no
+    }
+
+    immediate = {
+        # init default value
+        if = {
+            limit = {
+                check_variable = {
+                    which = asl_allowed_species
+                    value = 0
+                }
+            }
+            every_country = {
+                set_variable = {
+                    which = asl_allowed_species
+                    value = @asl_default_option
+                }
+                set_country_flag = asl_option_set
+            }
+        }
+        # remember initial country which set the option
+        set_country_flag = asl_option_country
+    }
+
+    option = {
+        name = asl_options.1.increment
+
+        trigger = {
+            check_variable = {
+                which = asl_allowed_species
+                value < 20
+            }
+        }
+
+        every_country = {
+            change_variable = {
+                which = asl_allowed_species
+                value = 1
+            }
+            set_country_flag = asl_option_set
+        }
+
+        country_event = {
+            id = asl_options.1
+        }
+    }
+
+    option = {
+        name = asl_options.1.increment2
+
+
+        trigger = {
+            check_variable = {
+                which = asl_allowed_species
+                value < 15
+            }
+        }
+
+        every_country = {
+            change_variable = {
+                which = asl_allowed_species
+                value = 5
+            }
+            set_country_flag = asl_option_set
+        }
+
+        country_event = {
+            id = asl_options.1
+        }
+    }
+
+    option = {
+        name = asl_options.1.increment3
+
+
+        trigger = {
+            check_variable = {
+                which = asl_allowed_species
+                value < 10
+            }
+        }
+
+        every_country = {
+            change_variable = {
+                which = asl_allowed_species
+                value = 10
+            }
+            set_country_flag = asl_option_set
+        }
+
+        country_event = {
+            id = asl_options.1
+        }
+    }
+
+    option = {
+        name = asl_options.1.decrement
+
+        trigger = {
+            check_variable = {
+                which = asl_allowed_species
+                value > 1
+            }
+        }
+
+        every_country = {
+            subtract_variable = {
+                which = asl_allowed_species
+                value = 1
+
+            }
+            set_country_flag = asl_option_set
+        }
+
+        country_event = {
+            id = asl_options.1
+        }
+    }
+
+    option = {
+        name = asl_options.1.decrement2
+
+        trigger = {
+            check_variable = {
+                which = asl_allowed_species
+                value > 5
+            }
+        }
+
+        every_country = {
+            subtract_variable = {
+                which = asl_allowed_species
+                value = 5
+
+            }
+            set_country_flag = asl_option_set
+        }
+
+        country_event = {
+            id = asl_options.1
+        }
+    }
+
+    option = {
+        name = asl_options.1.decrement3
+
+        trigger = {
+            check_variable = {
+                which = asl_allowed_species
+                value > 10
+            }
+        }
+
+        every_country = {
+            subtract_variable = {
+                which = asl_allowed_species
+                value = 10
+
+            }
+            set_country_flag = asl_option_set
+        }
+
+        country_event = {
+            id = asl_options.1
+        }
+    }
+
+    option = {
+        name = asl_options.1.close
+    }
+}
+
+country_event = {
+    id = asl_options.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        any_country = {
+            has_country_flag = asl_option_set
+        }
+        NOT = {
+            has_country_flag = asl_option_set
+        }
+    }
+
+    immediate = {
+        random_country = {
+            limit = {
+                has_country_flag = asl_option_set
+            }
+            save_event_target_as = option_target
+        }
+
+        set_variable = {
+            which = asl_allowed_species
+            value = event_target:option_target.asl_allowed_species
+        }
+    }
+}
