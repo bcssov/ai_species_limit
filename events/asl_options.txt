@@ -4,10 +4,11 @@ namespace = asl_options
 
 country_event = {
     id = asl_options.1
-    title = "asl_options.1.name"
+    title = "asl_options.1.title"
     desc = "asl_options.1.desc"
-    picture = GFX_evt_ship_in_orbit
     is_triggered_only = yes
+    diplomatic = yes
+    custom_gui = "asl_options"
 
     trigger = {
         is_ai = no
@@ -29,156 +30,17 @@ country_event = {
                 }
                 set_country_flag = asl_option_set
             }
-        }
-        # remember initial country which set the option
-        set_country_flag = asl_option_country
-    }
-
-    option = {
-        name = asl_options.1.increment
-
-        trigger = {
-            check_variable = {
-                which = asl_allowed_species
-                value < 20
-            }
-        }
-
-        every_country = {
-            change_variable = {
-                which = asl_allowed_species
-                value = 1
-            }
-            set_country_flag = asl_option_set
-        }
-
-        country_event = {
-            id = asl_options.1
+            # remember initial country which set the option
+            set_country_flag = asl_option_country
         }
     }
 
     option = {
-        name = asl_options.1.increment2
+        name = "asl_options.1.close"
 
-
-        trigger = {
-            check_variable = {
-                which = asl_allowed_species
-                value < 15
-            }
+        hidden_effect = {
+            remove_country_flag = asl_options_opened
         }
-
-        every_country = {
-            change_variable = {
-                which = asl_allowed_species
-                value = 5
-            }
-            set_country_flag = asl_option_set
-        }
-
-        country_event = {
-            id = asl_options.1
-        }
-    }
-
-    option = {
-        name = asl_options.1.increment3
-
-
-        trigger = {
-            check_variable = {
-                which = asl_allowed_species
-                value < 10
-            }
-        }
-
-        every_country = {
-            change_variable = {
-                which = asl_allowed_species
-                value = 10
-            }
-            set_country_flag = asl_option_set
-        }
-
-        country_event = {
-            id = asl_options.1
-        }
-    }
-
-    option = {
-        name = asl_options.1.decrement
-
-        trigger = {
-            check_variable = {
-                which = asl_allowed_species
-                value > 1
-            }
-        }
-
-        every_country = {
-            subtract_variable = {
-                which = asl_allowed_species
-                value = 1
-
-            }
-            set_country_flag = asl_option_set
-        }
-
-        country_event = {
-            id = asl_options.1
-        }
-    }
-
-    option = {
-        name = asl_options.1.decrement2
-
-        trigger = {
-            check_variable = {
-                which = asl_allowed_species
-                value > 5
-            }
-        }
-
-        every_country = {
-            subtract_variable = {
-                which = asl_allowed_species
-                value = 5
-
-            }
-            set_country_flag = asl_option_set
-        }
-
-        country_event = {
-            id = asl_options.1
-        }
-    }
-
-    option = {
-        name = asl_options.1.decrement3
-
-        trigger = {
-            check_variable = {
-                which = asl_allowed_species
-                value > 10
-            }
-        }
-
-        every_country = {
-            subtract_variable = {
-                which = asl_allowed_species
-                value = 10
-
-            }
-            set_country_flag = asl_option_set
-        }
-
-        country_event = {
-            id = asl_options.1
-        }
-    }
-
-    option = {
-        name = asl_options.1.close
     }
 }
 

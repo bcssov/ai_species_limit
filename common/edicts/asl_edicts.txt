@@ -9,6 +9,9 @@ asl_options = {
     length = 0
 
     potential = {
+        NOT = {
+            has_country_flag = asl_options_opened
+        }
         OR = {
             count_country = {
                 count = 0
@@ -23,6 +26,8 @@ asl_options = {
     effect = {
         custom_tooltip = asl_options_effect
         hidden_effect = {
+            set_country_flag = asl_options_opened
+
             country_event = {
                 id = asl_options.1
             }
