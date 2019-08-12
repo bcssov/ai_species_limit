@@ -15,6 +15,8 @@ country_event = {
     }
 
     immediate = {
+        # UI opened flag
+        set_country_flag = asl_options_opened
         # init default value
         if = {
             limit = {

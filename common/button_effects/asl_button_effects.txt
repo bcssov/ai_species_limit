@@ -1,63 +1,214 @@
 asl_close_options = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            remove_country_flag = asl_options_opened
-        }
-    }
+	potential = {
+		always = yes
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			remove_country_flag = asl_options_opened
+		}
+	}
+}
+
+asl_mode_options = {
+	potential = {
+		always = yes
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = asl_modify_3
+				}
+				remove_country_flag = asl_modify_3
+				set_country_flag = asl_modify_5
+			}
+			else_if = {
+				limit = {
+					has_country_flag = asl_modify_5
+				}
+				remove_country_flag = asl_modify_5
+			}
+			else = {
+				set_country_flag = asl_modify_3
+			}
+		}
+	}
+}
+
+asl_mode_options_1 = {
+	potential = {
+		NOT = {
+			has_country_flag = asl_modify_3
+			has_country_flag = asl_modify_5
+		}
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+	}
+}
+
+asl_mode_options_3 = {
+	potential = {
+		has_country_flag = asl_modify_3
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+	}
+}
+
+asl_mode_options_5 = {
+	potential = {
+		has_country_flag = asl_modify_5
+	}
+	allow = {
+		always = yes
+	}
+	effect = {
+	}
 }
 
 asl_decrease_options = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        check_variable = {
-            which = asl_allowed_species
-            value > 1
-        }
-    }
-    effect = {
-        hidden_effect = {
-            every_country = {
-                subtract_variable = {
-                    which = asl_allowed_species
-                    value = 1
+	potential = {
+		always = yes
+	}
+	allow = {
+		check_variable = {
+			which = asl_allowed_species
+			value > 1
+		}
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = asl_modify_3
+				}
+				every_country = {
+					subtract_variable = {
+						which = asl_allowed_species
+						value = 3
 
-                }
-                set_country_flag = asl_option_set
-            }
-        }
-    }
+					}
+					set_country_flag = asl_option_set
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = asl_modify_5
+				}
+				every_country = {
+					subtract_variable = {
+						which = asl_allowed_species
+						value = 5
+
+					}
+					set_country_flag = asl_option_set
+				}
+			}
+			else = {
+				every_country = {
+					subtract_variable = {
+						which = asl_allowed_species
+						value = 1
+					}
+					set_country_flag = asl_option_set
+				}
+			}
+			# Ensure we don't go into negative
+			if = {
+				limit = {
+					check_variable = {
+						which = asl_allowed_species
+						value < 1
+					}
+				}
+				every_country = {
+					set_variable = {
+						which = asl_allowed_species
+						value = 1
+
+					}
+				}
+			}
+		}
+	}
 }
 
 asl_increase_options = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        check_variable = {
-            which = asl_allowed_species
-            value < 20
-        }
-    }
-    effect = {
-        hidden_effect = {
-            every_country = {
-                change_variable = {
-                    which = asl_allowed_species
-                    value = 1
-                }
-                set_country_flag = asl_option_set
-            }
-        }
-    }
+	potential = {
+		always = yes
+	}
+	allow = {
+		check_variable = {
+			which = asl_allowed_species
+			value < 20
+		}
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = asl_modify_3
+				}
+				every_country = {
+					change_variable = {
+						which = asl_allowed_species
+						value = 3
+					}
+					set_country_flag = asl_option_set
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = asl_modify_5
+				}
+				every_country = {
+					change_variable = {
+						which = asl_allowed_species
+						value = 5
+					}
+					set_country_flag = asl_option_set
+				}
+			}
+			else = {
+				every_country = {
+					change_variable = {
+						which = asl_allowed_species
+						value = 1
+					}
+					set_country_flag = asl_option_set
+				}
+			}
+			# Ensure we don't go over 20
+			if = {
+				limit = {
+					check_variable = {
+						which = asl_allowed_species
+						value > 20
+					}
+				}
+				every_country = {
+					set_variable = {
+						which = asl_allowed_species
+						value = 20
+
+					}
+				}
+			}
+		}
+	}
 }
+
 
 asl_options_1 = {
 	potential = {
@@ -72,6 +223,7 @@ asl_options_1 = {
 	effect = {
 	}
 }
+
 asl_options_2 = {
 	potential = {
 		check_variable = {
@@ -85,6 +237,7 @@ asl_options_2 = {
 	effect = {
 	}
 }
+
 asl_options_3 = {
 	potential = {
 		check_variable = {
@@ -98,6 +251,7 @@ asl_options_3 = {
 	effect = {
 	}
 }
+
 asl_options_4 = {
 	potential = {
 		check_variable = {
@@ -111,6 +265,7 @@ asl_options_4 = {
 	effect = {
 	}
 }
+
 asl_options_5 = {
 	potential = {
 		check_variable = {
@@ -124,6 +279,7 @@ asl_options_5 = {
 	effect = {
 	}
 }
+
 asl_options_6 = {
 	potential = {
 		check_variable = {
@@ -137,6 +293,7 @@ asl_options_6 = {
 	effect = {
 	}
 }
+
 asl_options_7 = {
 	potential = {
 		check_variable = {
@@ -150,6 +307,7 @@ asl_options_7 = {
 	effect = {
 	}
 }
+
 asl_options_8 = {
 	potential = {
 		check_variable = {
@@ -163,6 +321,7 @@ asl_options_8 = {
 	effect = {
 	}
 }
+
 asl_options_9 = {
 	potential = {
 		check_variable = {
@@ -176,6 +335,7 @@ asl_options_9 = {
 	effect = {
 	}
 }
+
 asl_options_10 = {
 	potential = {
 		check_variable = {
@@ -189,6 +349,7 @@ asl_options_10 = {
 	effect = {
 	}
 }
+
 asl_options_11 = {
 	potential = {
 		check_variable = {
@@ -202,6 +363,7 @@ asl_options_11 = {
 	effect = {
 	}
 }
+
 asl_options_12 = {
 	potential = {
 		check_variable = {
@@ -215,6 +377,7 @@ asl_options_12 = {
 	effect = {
 	}
 }
+
 asl_options_13 = {
 	potential = {
 		check_variable = {
@@ -228,6 +391,7 @@ asl_options_13 = {
 	effect = {
 	}
 }
+
 asl_options_14 = {
 	potential = {
 		check_variable = {
@@ -241,6 +405,7 @@ asl_options_14 = {
 	effect = {
 	}
 }
+
 asl_options_15 = {
 	potential = {
 		check_variable = {
@@ -254,6 +419,7 @@ asl_options_15 = {
 	effect = {
 	}
 }
+
 asl_options_16 = {
 	potential = {
 		check_variable = {
@@ -267,6 +433,7 @@ asl_options_16 = {
 	effect = {
 	}
 }
+
 asl_options_17 = {
 	potential = {
 		check_variable = {
@@ -280,6 +447,7 @@ asl_options_17 = {
 	effect = {
 	}
 }
+
 asl_options_18 = {
 	potential = {
 		check_variable = {
@@ -293,6 +461,7 @@ asl_options_18 = {
 	effect = {
 	}
 }
+
 asl_options_19 = {
 	potential = {
 		check_variable = {
@@ -306,6 +475,7 @@ asl_options_19 = {
 	effect = {
 	}
 }
+
 asl_options_20 = {
 	potential = {
 		check_variable = {
