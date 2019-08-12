@@ -5,7 +5,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes		
-		size = { width = 500 height = 300 }    
+		size = { width = 500 height = 330 }    
 
         background = {
             name = "background"	
@@ -40,7 +40,6 @@ guiTypes = {
         containerWindowType = {
 			name = "EVENT_DIPLO"
 			position = { x = 0 y = 0 }
-		
 			moveable = no
 			
 			instantTextBoxType = {
@@ -65,229 +64,260 @@ guiTypes = {
 			name = "alien_message"
 			font = "cg_16b"
 			position = { x = 10 y = 68 }
-			maxWidth = 400
-			maxHeight = 140
+			maxWidth = 420
+			maxHeight = 180
 			format = left
 			scrollbartype = "standardtext_slider"            
 		}  
 
+		iconType = {
+			name = "divider"
+			quadTextureSprite = "GFX_line_horizontal"
+			position = { x = 10 y = 260 }
+			alwaysTransparent = yes
+		}		
+
 		effectButtonType = {
 			name = "decrease_button"
-			position = { x = 10 y = 230 }            
+			position = { x = 10 y = 290 }            
 			quadTextureSprite ="GFX_fleet_manager_minus"			
 			clicksound = "decrement_click"
 			oversound = "no_sound"
-            effect = "asl_decrease_options"
+			effect = "asl_decrease_options"
+            shortcut = "-"
 		}
 
-		effectButtonType = {
-			name = "counter_1"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_1"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_1"
-		}
-		effectButtonType = {
-			name = "counter_2"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_2"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_2"
-		}
-		effectButtonType = {
-			name = "counter_3"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_3"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_3"
-		}
-		effectButtonType = {
-			name = "counter_4"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_4"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_4"
-		}
-		effectButtonType = {
-			name = "counter_5"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_5"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_5"
-		}
-		effectButtonType = {
-			name = "counter_6"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_6"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_6"
-		}
-		effectButtonType = {
-			name = "counter_7"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_7"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_7"
-		}
-		effectButtonType = {
-			name = "counter_8"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_8"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_8"
-		}
-		effectButtonType = {
-			name = "counter_9"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_9"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_9"
-		}
-		effectButtonType = {
-			name = "counter_10"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_10"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_10"
-		}
-		effectButtonType = {
-			name = "counter_11"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_11"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_11"
-		}
-		effectButtonType = {
-			name = "counter_12"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_12"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_12"
-		}
-		effectButtonType = {
-			name = "counter_13"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_13"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_13"
-		}
-		effectButtonType = {
-			name = "counter_14"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_14"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_14"
-		}
-		effectButtonType = {
-			name = "counter_15"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_15"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_15"
-		}
-		effectButtonType = {
-			name = "counter_16"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_16"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_16"
-		}
-		effectButtonType = {
-			name = "counter_17"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_17"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_17"
-		}
-		effectButtonType = {
-			name = "counter_18"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_18"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_18"
-		}
-		effectButtonType = {
-			name = "counter_19"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_19"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_19"
-		}
-		effectButtonType = {
-			name = "counter_20"
-			quadTextureSprite = "GFX_asl_text_button"
-			position = { x = 50 y = 230 }
-			buttonFont = "cg_16b"
-			buttonText = "asl_counter_20"
-			clicksound = no_sound
-			oversound = no_sound
-			effect = "asl_options_20"
-		}
+
+
+        effectButtonType = {
+            name = "counter_1"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_1"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_1"
+        }
+
+        effectButtonType = {
+            name = "counter_2"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_2"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_2"
+        }
+
+        effectButtonType = {
+            name = "counter_3"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_3"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_3"
+        }
+
+        effectButtonType = {
+            name = "counter_4"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_4"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_4"
+        }
+
+        effectButtonType = {
+            name = "counter_5"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_5"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_5"
+        }
+
+        effectButtonType = {
+            name = "counter_6"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_6"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_6"
+        }
+
+        effectButtonType = {
+            name = "counter_7"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_7"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_7"
+        }
+
+        effectButtonType = {
+            name = "counter_8"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_8"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_8"
+        }
+
+        effectButtonType = {
+            name = "counter_9"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_9"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_9"
+        }
+
+        effectButtonType = {
+            name = "counter_10"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_10"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_10"
+        }
+
+        effectButtonType = {
+            name = "counter_11"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_11"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_11"
+        }
+
+        effectButtonType = {
+            name = "counter_12"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_12"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_12"
+        }
+
+        effectButtonType = {
+            name = "counter_13"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_13"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_13"
+        }
+
+        effectButtonType = {
+            name = "counter_14"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_14"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_14"
+        }
+
+        effectButtonType = {
+            name = "counter_15"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_15"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_15"
+        }
+
+        effectButtonType = {
+            name = "counter_16"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_16"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_16"
+        }
+
+        effectButtonType = {
+            name = "counter_17"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_17"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_17"
+        }
+
+        effectButtonType = {
+            name = "counter_18"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_18"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_18"
+        }
+
+        effectButtonType = {
+            name = "counter_19"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_19"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_19"
+        }
+
+        effectButtonType = {
+            name = "counter_20"
+            quadTextureSprite = "GFX_asl_text_button"
+            position = { x = 50 y = 290 }
+            buttonFont = "cg_16b"
+            buttonText = "asl_counter_20"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "asl_options_20"
+        }
+
  
 		effectButtonType = {
 			name = "increase_button"
-			position = { x = 110 y = 230 }
+			position = { x = 110 y = 290 }
 			quadTextureSprite ="GFX_fleet_manager_plus"			
 			clicksound = "increment_click"
 			oversound = "no_sound"
             effect = "asl_increase_options"
+            shortcut = "+"
 		}        
     
         # Game crashes if these are not present, so use the old trick of moving them off the screen to "hide" them.
@@ -335,28 +365,24 @@ guiTypes = {
 			
 			iconType = {
 				name = "portrait"
-				spriteType = "GFX_portrait_gamesetup_mask"
-				alwaysTransparent = yes
+				spriteType = "GFX_portrait_gamesetup_mask"				
 			}
 					
 			iconType = {
 				name = "black_frame"
 				spriteType = "GFX_diplomacy_portrait_shadow_frame"
-				position = { x = -5000 y = -5000}
-				alwaysTransparent = yes
+				position = { x = -5000 y = -5000}				
 			}
 			
 			iconType = {
 				name = "stripes_1"
-				spriteType = "GFX_diplomacy_stripes_2"
-				alwaysTransparent = yes
+				spriteType = "GFX_diplomacy_stripes_2"				
 			}
 				
 			iconType = {
 				name = "city_frame"
 				spriteType = "GFX_diplomacy_portrait_frame_artist"
-				position = { x = -5000 y = -5000 }
-				alwaysTransparent = yes
+				position = { x = -5000 y = -5000 }				
 			}
 		}        
         iconType = {
@@ -437,15 +463,13 @@ guiTypes = {
 			iconType = {
 				name = "their_opinion_icon"
 				spriteType = "GFX_diplomacy_opinion"
-				position = { x = -5000 y = -5000 }
-				alwaysTransparent = yes
+				position = { x = -5000 y = -5000 }				
 			}
 
 			instantTextBoxType = {
 				name = "their_opinion"
 				font = "cg_16b"				
-				position = { x = -5000 y = -5000 }				
-				alwaysTransparent = yes
+				position = { x = -5000 y = -5000 }								
 			}
 		}                                      				             
     }                
