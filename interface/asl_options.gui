@@ -65,7 +65,7 @@ guiTypes = {
 			font = "cg_16b"
 			position = { x = 10 y = 68 }
 			maxWidth = 420
-			maxHeight = 180
+			maxHeight = 200
 			format = left
 			scrollbartype = "standardtext_slider"            
 		}  
@@ -73,13 +73,13 @@ guiTypes = {
 		iconType = {
 			name = "divider"
 			quadTextureSprite = "GFX_line_horizontal"
-			position = { x = 10 y = 260 }
+			position = { x = 10 y = 270 }
 			alwaysTransparent = yes
 		}		
 
 		effectButtonType = {
 			name = "decrease_button"
-			position = { x = 10 y = 290 }            
+			position = { x = 10 y = 300 }            
 			quadTextureSprite ="GFX_fleet_manager_minus"			
 			clicksound = "decrement_click"
 			oversound = "no_sound"
@@ -92,7 +92,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_1"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_1"
             clicksound = no_sound
@@ -103,7 +103,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_2"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_2"
             clicksound = no_sound
@@ -114,7 +114,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_3"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_3"
             clicksound = no_sound
@@ -125,7 +125,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_4"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_4"
             clicksound = no_sound
@@ -136,7 +136,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_5"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_5"
             clicksound = no_sound
@@ -147,7 +147,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_6"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_6"
             clicksound = no_sound
@@ -158,7 +158,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_7"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_7"
             clicksound = no_sound
@@ -169,7 +169,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_8"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_8"
             clicksound = no_sound
@@ -180,7 +180,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_9"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_9"
             clicksound = no_sound
@@ -191,7 +191,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_10"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_10"
             clicksound = no_sound
@@ -202,7 +202,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_11"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_11"
             clicksound = no_sound
@@ -213,7 +213,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_12"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_12"
             clicksound = no_sound
@@ -224,7 +224,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_13"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_13"
             clicksound = no_sound
@@ -235,7 +235,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_14"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_14"
             clicksound = no_sound
@@ -246,7 +246,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_15"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_15"
             clicksound = no_sound
@@ -257,7 +257,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_16"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_16"
             clicksound = no_sound
@@ -268,7 +268,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_17"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_17"
             clicksound = no_sound
@@ -279,7 +279,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_18"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_18"
             clicksound = no_sound
@@ -290,7 +290,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_19"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_19"
             clicksound = no_sound
@@ -301,7 +301,7 @@ guiTypes = {
         effectButtonType = {
             name = "counter_20"
             quadTextureSprite = "GFX_asl_text_button"
-            position = { x = 50 y = 290 }
+            position = { x = 50 y = 300 }
             buttonFont = "cg_16b"
             buttonText = "asl_counter_20"
             clicksound = no_sound
@@ -309,10 +309,11 @@ guiTypes = {
             effect = "asl_options_20"
         }
 
+
  
 		effectButtonType = {
 			name = "increase_button"
-			position = { x = 110 y = 290 }
+			position = { x = 110 y = 300 }
 			quadTextureSprite ="GFX_fleet_manager_plus"			
 			clicksound = "increment_click"
 			oversound = "no_sound"

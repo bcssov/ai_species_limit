@@ -4,7 +4,7 @@ template = '''
         effectButtonType = {{
             name = "counter_{0}"
             quadTextureSprite = "GFX_asl_text_button"
-            position = {{ x = 50 y = 290 }}
+            position = {{ x = 50 y = 300 }}
             buttonFont = "cg_16b"
             buttonText = "asl_counter_{0}"
             clicksound = no_sound
