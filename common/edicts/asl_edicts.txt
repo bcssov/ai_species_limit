@@ -10,8 +10,8 @@ asl_options = {
 
     potential = {
         NOT = {
-            has_country_flag = asl_options_opened
             has_global_flag = dynamic_mod_menu_installed
+            has_country_flag = asl_options_opened
         }
         OR = {
             count_country = {
