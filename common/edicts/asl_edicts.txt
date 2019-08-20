@@ -11,6 +11,7 @@ asl_options = {
     potential = {
         NOT = {
             has_country_flag = asl_options_opened
+            has_global_flag = dynamic_mod_menu_installed
         }
         OR = {
             count_country = {
@@ -25,7 +26,7 @@ asl_options = {
 
     effect = {
         custom_tooltip = asl_options_effect
-        hidden_effect = {            
+        hidden_effect = {
             country_event = {
                 id = asl_options.1
             }

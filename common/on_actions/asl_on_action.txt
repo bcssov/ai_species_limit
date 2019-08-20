@@ -1,3 +1,15 @@
+on_game_start = {
+    events = {
+        dmm_mod_1_flag.1
+    }
+}
+
+on_monthly_pulse = {
+    events = {
+        dmm_mod_1_flag.1
+    }
+}
+
 on_monthly_pulse_country = {
     events = {
         asl_options.2

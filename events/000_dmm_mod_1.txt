@@ -1,0 +1,22 @@
+
+namespace = dmm_mod
+
+country_event = {
+    id = dmm_mod.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        has_global_flag = dmm_mod_1
+    }
+
+    after = {
+        remove_global_flag = dmm_mod_1_opened
+    }
+
+    immediate = {
+        country_event = {
+            id = asl_options.1
+        }
+    }
+}
