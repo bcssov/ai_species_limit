@@ -14,6 +14,7 @@ template = """
                             OR = {{
                                 is_same_species = prevprev
                                 is_subspecies = prevprev
+                                is_half_species = prevprev
                             }}
                         }}
                     }}
@@ -24,8 +25,8 @@ def process(publish_dir):
     lines = []
     for i in range(1, settings.total):
         if i == 1:
-            lines.append(template.format("if", str(i)))
+            lines.append(template.format("if", i))
         else:
-            lines.append(template.format("else_if", str(i)))
+            lines.append(template.format("else_if", i))
     templater.process_file(
         publish_dir + "/common/game_rules/asl_rules.txt", lines)

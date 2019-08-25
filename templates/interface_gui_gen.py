@@ -17,6 +17,6 @@ template = '''
 def process(publish_dir):
     lines = []
     for i in range(1, settings.total):
-        lines.append(template.format(str(i)))
+        lines.append(template.format(i))
     templater.process_file(
         publish_dir + "/interface/asl_options.gui", lines)

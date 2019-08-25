@@ -19,6 +19,6 @@ asl_options_{0} = {{
 def process(publish_dir):
     lines = []
     for i in range(1, settings.total):
-        lines.append(template.format(str(i)))
+        lines.append(template.format(i))
     templater.process_file(
         publish_dir + "/common/button_effects/asl_button_effects.txt", lines)

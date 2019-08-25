@@ -26,8 +26,9 @@ can_modify_species = {
                     count < @asl_default_option
                     limit = {
                         OR = {
-                            is_same_species = prev
-                            is_subspecies = prev
+                            is_same_species = prevprev
+                            is_subspecies = prevprev
+                            is_half_species = prevprev
                         }
                     }
                 }

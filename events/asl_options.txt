@@ -12,6 +12,7 @@ country_event = {
 
     trigger = {
         is_ai = no
+        has_country_flag = asl_option_country
     }
 
     immediate = {
