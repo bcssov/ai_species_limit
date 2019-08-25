@@ -1,4 +1,4 @@
-import vars
+from templates.utils import settings, templater
 
 template = '''
         effectButtonType = {{
@@ -13,5 +13,10 @@ template = '''
             effect = "asl_options_{0}"
         }}'''
 
-for i in range (1, vars.total):
-    print(template.format(str(i)))
+
+def process(publish_dir):
+    lines = []
+    for i in range(1, settings.total):
+        lines.append(template.format(str(i)))
+    templater.process_file(
+        publish_dir + "/interface/asl_options.gui", lines)
