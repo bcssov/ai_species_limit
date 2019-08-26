@@ -34,3 +34,11 @@ That's been possible from day one. Recent changes better explain that functional
 
 [i]I want to prevent the mod from using the edicts menu, is there anything that I can do?[/i]
 Check out Dynamic Mod Menu, this mod has full support for it: https://steamcommunity.com/sharedfiles/filedetails/?id=1840010432
+
+[i]Can you limit the number of hybrid species being created?[/i]
+I am sorry to disappoint I can't prevent half species from being created programmatically or limit them at all. Paradox's conditions don't work, namely the "is_half_species" trigger which is the only way to find out if a species is a hybrid. No way to workaround the issue as no other exposed API calls can be used to find out if a species is a hybrid. Until it's fixed your best bet is:
+1. Cope with it (not what you wanted to hear)
+2. Nag PDX to fix the feature 
+3. Nag PDX to fix "is_half_species" trigger
+4. Disable Xeno-Compatibility
+...

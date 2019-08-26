@@ -11,6 +11,8 @@ asl_options = {
     potential = {
         NOT = {
             has_global_flag = dynamic_mod_menu_installed
+        }
+        NOT = {
             has_country_flag = asl_options_opened
         }
         OR = {

@@ -16,7 +16,7 @@ can_modify_species = {
                 ### BEGIN TEMPLATE ###
                 ### END TEMPLATE ###
 
-                #has_country_flag = asl_option_country # Test case ai non ai
+                # has_country_flag = asl_option_country # Test case ai non ai
                 is_ai = no
             }
         }
@@ -28,11 +28,10 @@ can_modify_species = {
                         OR = {
                             is_same_species = prevprev
                             is_subspecies = prevprev
-                            is_half_species = prevprev
                         }
                     }
                 }
-                #has_country_flag = asl_option_country # Test case ai non ai
+                # has_country_flag = asl_option_country # Test case ai non ai
                 is_ai = no
             }
         }

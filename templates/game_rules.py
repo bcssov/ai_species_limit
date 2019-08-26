@@ -14,7 +14,6 @@ template = """
                             OR = {{
                                 is_same_species = prevprev
                                 is_subspecies = prevprev
-                                is_half_species = prevprev
                             }}
                         }}
                     }}

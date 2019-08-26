@@ -12,7 +12,18 @@ country_event = {
 
     trigger = {
         is_ai = no
-        has_country_flag = asl_option_country
+        NOT = {
+            has_country_flag = asl_options_opened
+        }
+        OR = {
+            count_country = {
+                count = 0
+                limit = {
+                    has_country_flag = asl_option_country
+                }
+            }
+            has_country_flag = asl_option_country
+        }
     }
 
     immediate = {
