@@ -210,5 +210,5 @@ asl_increase_options = {
 }
 
 
-### BEGIN TEMPLATE ###
-### END TEMPLATE ###
+### BEGIN TEMPLATE:effects ###
+### END TEMPLATE:effects ###

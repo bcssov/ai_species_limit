@@ -1,15 +1,15 @@
 from templates.utils import settings, templater
 
 template = """
-                {0} = {{
+                {if_statement} = {{
                     limit = {{
                         check_variable = {{
                             which = asl_allowed_species
-                            value = {1}
+                            value = {count}
                         }}
                     }}
                     count_exact_species = {{
-                        count < {1}
+                        count < {count}
                         limit = {{
                             OR = {{
                                 is_same_species = prevprev
@@ -24,8 +24,8 @@ def process(publish_dir):
     lines = []
     for i in range(1, settings.total):
         if i == 1:
-            lines.append(template.format("if", i))
+            lines.append(template.format(if_statement="if", count=i))
         else:
-            lines.append(template.format("else_if", i))
+            lines.append(template.format(if_statement="else_if", count=i))
     templater.process_file(
-        publish_dir + "/common/game_rules/asl_rules.txt", lines)
+        publish_dir + "/common/game_rules/asl_rules.txt", rules=lines)

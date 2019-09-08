@@ -1,11 +1,11 @@
 from templates.utils import settings, templater
 
 template = """
-asl_options_{0} = {{
+asl_options_{count} = {{
 	potential = {{
 		check_variable = {{
 			which = asl_allowed_species
-			value = {0}
+			value = {count}
 		}}
 	}}
 	allow = {{
@@ -19,6 +19,6 @@ asl_options_{0} = {{
 def process(publish_dir):
     lines = []
     for i in range(1, settings.total):
-        lines.append(template.format(i))
+        lines.append(template.format(count=i))
     templater.process_file(
-        publish_dir + "/common/button_effects/asl_button_effects.txt", lines)
+        publish_dir + "/common/button_effects/asl_button_effects.txt", effects=lines)

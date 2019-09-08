@@ -13,8 +13,8 @@ can_modify_species = {
             # This really sucks, can't write count < country.variable instead we've got to chain if statements. WTF language indeed.
             OR = {
 
-                ### BEGIN TEMPLATE ###
-                ### END TEMPLATE ###
+                ### BEGIN TEMPLATE:rules ###
+                ### END TEMPLATE:rules ###
 
                 # has_country_flag = asl_option_country # Test case ai non ai
                 is_ai = no
