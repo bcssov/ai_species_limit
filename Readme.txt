@@ -1,3 +1,9 @@
+[h1]Load Order[/h1]
+Not important.
+
+[h1]Older Versions[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1885029758]For 2.3[/url]
+
 [h1]FAQ[/h1]
 [i]What does this mod do?[/i]
 It allows you as a player via edict to set a number of allowed subspecies (per empire) up to 20. It doesn't do anything more or less.
@@ -42,6 +48,3 @@ I am sorry to disappoint I can't prevent half species from being created program
 3. Nag PDX to fix "is_half_species" trigger
 4. Disable Xeno-Compatibility
 ...
-
-[h1]Older Versions[/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1885029758]2.3[/url]

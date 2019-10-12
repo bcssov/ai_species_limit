@@ -4,6 +4,6 @@ tags={
 	"Gameplay"
 	"Fixes"
 }
-picture="1.jpg"
+picture="thumbnail.png"
 remote_file_id="1830063425"
 supported_version="2.4.*"
