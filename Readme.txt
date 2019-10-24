@@ -3,6 +3,7 @@ Not important.
 
 [h1]Older Versions[/h1]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1885029758]For 2.3[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1897590215]For 2.4[/url]
 
 [h1]FAQ[/h1]
 [i]What does this mod do?[/i]
