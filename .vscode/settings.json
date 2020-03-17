@@ -25,5 +25,8 @@
     },
     "[yaml]": {
         "editor.defaultFormatter": "Private.stellaris-formatter"
+    },
+    "[paradox]": {
+        "editor.defaultFormatter": "tboby.cwtools-vscode"
     }
 }
