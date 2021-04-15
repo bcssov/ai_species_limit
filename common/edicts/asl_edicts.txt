@@ -9,7 +9,7 @@ asl_options = {
 	length = 0
 	potential = {
 		NOT = {
-			has_global_flag = dynamic_mod_menu_installed
+			has_global_flag = dmm_installed
 		}
 		NOT = {
 			has_country_flag = asl_options_opened
