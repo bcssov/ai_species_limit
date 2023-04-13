@@ -10,7 +10,7 @@ can_modify_species = {
                 }
             }
 
-            # This really sucks, can't write count < country.variable instead we've got to chain if statements. WTF language indeed.
+            # Probably can now, just too lazy to change it...
             OR = {
 
                 ### BEGIN TEMPLATE:rules ###
@@ -26,8 +26,8 @@ can_modify_species = {
                     count < @asl_default_option
                     limit = {
                         OR = {
-                            is_same_species = prevprev
-                            is_subspecies = prevprev
+                            is_same_species = prevprevprev
+                            is_subspecies = prevprevprev
                         }
                     }
                 }

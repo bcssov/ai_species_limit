@@ -12,8 +12,8 @@ template = """
                         count < {count}
                         limit = {{
                             OR = {{
-                                is_same_species = prevprev
-                                is_subspecies = prevprev
+                                is_same_species = prevprevprev
+                                is_subspecies = prevprevprev
                             }}
                         }}
                     }}
